@@ -1,0 +1,53 @@
+.ico-tax{
+  width:100px;
+  display:block;
+  height:20px;
+  background:transparent;
+  color:white;
+  text-decoration:none;
+}
+.ico-tax:before{
+  content: '';
+  background:url('/static/img/icons8-tax-96.png');
+  background-size:cover;
+  position:absolute;
+  width:40px;
+  height:40px;
+  bottom: 0;
+}
+
+.ico-diploma{
+  width:100px;
+  display:block;
+  height:20px;
+  background:transparent;
+  color:white;
+  text-decoration:none;
+}
+.ico-diploma:before{
+  content: '';
+  background:url('/static/img/icons8-contract-52.png');
+  background-size:cover;
+  position:absolute;
+  width:40px;
+  height:40px;
+  bottom: 0;
+}
+
+.ico-acad{
+  width:100px;
+  display:block;
+  height:20px;
+  background:transparent;
+  color:white;
+  text-decoration:none;
+}
+.ico-acad:before{
+  content: '';
+  background:url('/static/img/icons8-graduation-cap-50.png');
+  background-size:cover;
+  position:absolute;
+  width:40px;
+  height:40px;
+  bottom: 0;
+}
