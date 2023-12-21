@@ -5,3 +5,7 @@ npm-debug.log
 
 storybook-static/
 test/unit/coverage/
+
+//exlcuye mi script.bat
+script.bat
+```

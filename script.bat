@@ -1,14 +1,23 @@
-:: Archivos específicos a excluir durante el merge (con rutas relativas)
-set EXCLUDED_FILES=src\router\index.js
+#!/bin/bash
 
-:: Realizar checkout de los archivos específicos desde la rama de destino (main)
-for %%F in (%EXCLUDED_FILES%) do git checkout main -- "%%F"
+# Archivo específico a excluir durante el merge (con ruta relativa)
+EXCLUDED_FILE="src/router/index.js"
 
-:: Realizar el merge
+# Realizar un stash de los cambios locales en la rama de destino (main)
+git stash
+
+# Realizar el merge
 git merge dev
 
-:: Restaurar el estado de los archivos específicos en la rama de destino (main)
-for %%F in (%EXCLUDED_FILES%) do git checkout dev -- "%%F"
+# Aplicar los cambios locales nuevamente (sin aplicar los cambios del archivo específico)
+git stash apply --index
 
-:: Commit de los cambios en la rama de destino (main)
-git commit -m "Merge de dev en main, excluyendo cambios en %EXCLUDED_FILES%"
+# Deshacer los cambios del archivo específico en la rama de destino (main)
+git checkout main
+
+# Cherry-pick solo los cambios que no incluyen el archivo específico
+git cherry-pick --no-commit dev
+git reset
+
+# Commit de los cambios en la rama de destino (main)
+git commit -m "Merge de dev en main, excluyendo cambios en $EXCLUDED_FILE"
