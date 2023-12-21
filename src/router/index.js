@@ -1,7 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Layout from 'src/components/Layout/Layout.vue'
+//NuevaRuta de ejemplo para ver si no cambia
+import B1People from 'src/modules/B1People'
 
+// NuevaRuta de ejemplo para ver si no cambia
+// import B1People from 'src/modules/B1People'
+//ESTOY COMENTANDO PARA VER SI CAMBIA OJALA FUNCIONE!!!
+// GeneralViews
+// Roles Module
+
+///////ccccccccccccccccccccccccccccccccccccccc
+import Roles from 'src/modules/Roles'
+// Access Module
+import Access from 'src/modules/Access'
+// Users Module
+import Users from 'src/modules/Users'
 // Distribution Module
 import Dist from 'src/modules/Distribution'
 // Level Module
