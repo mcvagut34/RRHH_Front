@@ -14,4 +14,4 @@
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
 
-src/router/index.js merge=ours
+src/router/* merge=ours
