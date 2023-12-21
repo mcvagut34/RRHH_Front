@@ -24,7 +24,11 @@ import './assets/sass/demo.scss'
 
 // import Vee validate
 import VeeValidate from 'vee-validate'
-//ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+////PROBANDO SI FUNCIONA OKAY AHORA SI!
+////PROBANDO SI FUNCIONA OKAY AHORA SI!
+////PROBANDO SI FUNCIONA OKAY AHORA SI!
+////PROBANDO SI FUNCIONA OKAY AHORA SI!
+////PROBANDO SI FUNCIONA OKAY AHORA SI!
 // plugin setup
 Vue.use(VueRouter)
 Vue.use(GlobalDirectives)
