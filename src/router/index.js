@@ -8,16 +8,9 @@ import B1People from 'src/modules/B1People'
 // import B1People from 'src/modules/B1People'
 //ESTOY COMENTANDO PARA VER SI CAMBIA OJALA FUNCIONE!!!
 // GeneralViews
-import NotFound from 'src/components/GeneralViews/NotFoundPage.vue'
-// Pages
-import UserProfile from 'src/components/User/UserProfile.vue'
-// Auth Module
-import Login from 'src/modules/Auth/Login.vue'
-// Employees Module
-import Employee from 'src/modules/Employees'
-// Branches Module
-import Branches from 'src/modules/Branches'
 // Roles Module
+
+///////ccccccccccccccccccccccccccccccccccccccc
 import Roles from 'src/modules/Roles'
 // Access Module
 import Access from 'src/modules/Access'
