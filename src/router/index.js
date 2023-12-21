@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Layout from 'src/components/Layout/Layout.vue'
+//NuevaRuta de ejemplo para ver si no cambia
+import B1People from 'src/modules/B1People'
 // GeneralViews
 import NotFound from 'src/components/GeneralViews/NotFoundPage.vue'
 // Pages
