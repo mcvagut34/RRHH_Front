@@ -9,15 +9,11 @@ git stash
 # Realizar el merge
 git merge dev
 
-# Aplicar los cambios locales nuevamente (sin aplicar los cambios del archivo específico)
-git stash apply --index
-
-# Deshacer los cambios del archivo específico en la rama de destino (main)
-git checkout main
-
-# Cherry-pick solo los cambios que no incluyen el archivo específico
-git cherry-pick --no-commit dev
-git reset
+# Deshacer los cambios específicos en la rama de destino (main)
+git checkout main -- "$EXCLUDED_FILE"
 
 # Commit de los cambios en la rama de destino (main)
 git commit -m "Merge de dev en main, excluyendo cambios en $EXCLUDED_FILE"
+
+# Aplicar los cambios locales nuevamente (sin aplicar los cambios del archivo específico)
+git stash apply --index
